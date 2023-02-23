@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityProfilePage">
+
+    <Button
+        android:id="@+id/btn_profileSave"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_color_shape_selector"
+        android:elevation="100dp"
+        android:fontFamily="@font/roboto_bold"
+        android:letterSpacing=".2"
+        android:text="SAVE PROFILE"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_profileBloodGroup"
+        app:layout_constraintStart_toStartOf="@+id/spinner_profileBloodGroup"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_profileBloodGroup" />
+
+    <EditText
+        android:id="@+id/txt_profileUserName"
+        android:layout_width="355dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_locality"
+        android:ems="10"
+        android:fontFamily="@font/roboto_bold"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:maxLength="25"
+        app:layout_constraintEnd_toEndOf="@+id/lblPhoneNumber"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/lblPhoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/lblPhoneNumber" />
+
+    <ImageView
+        android:id="@+id/imgNotificationBar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradient_file" />
+
+    <ImageView
+        android:id="@+id/imgUserProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressbarUserProfile"
+        app:srcCompat="@drawable/user_profile_default_img1" />
+
+    <Spinner
+        android:id="@+id/spinner_profileBloodGroup"
+        android:layout_width="355dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/spinner_blood_outline"
+        android:entries="@array/blood_groups"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="@+id/txt_profileUserName"
+        app:layout_constraintStart_toStartOf="@+id/txt_profileUserName"
+        app:layout_constraintTop_toBottomOf="@+id/txt_profileUserName" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar_for_optionsMenu"
+        android:background="@drawable/gradient_file"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNotificationBar"
+        app:menu="@menu/options_menu"
+        app:popupTheme="@style/OptionsPopUpTheme" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/A_bottom_navigation_container4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_nav"
+        android:background="@drawable/gradient_file"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+    <ProgressBar
+        android:id="@+id/progressbarUserProfile"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:progressTint="#12A6F4"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+    <TextView
+        android:id="@+id/lblPhoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_textview"
+        android:fontFamily="@font/roboto_bold"
+        android:text="5896541236"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgUserProfile"
+        app:layout_constraintStart_toStartOf="@+id/imgUserProfile"
+        app:layout_constraintTop_toBottomOf="@+id/imgUserProfile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnDeleteRequest"
+            android:layout_width="63dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/selector_btn_delete"
+            android:elevation="8dp"
+            android:src="@drawable/dustbin_red_transaction1_5x"
+            app:layout_constraintBottom_toBottomOf="@+id/lblBloodGroupDisplayCardView"
+            app:layout_constraintStart_toEndOf="@+id/txtHospital"
+            app:layout_constraintTop_toTopOf="@+id/lblBloodGroupDisplayCardView" />
+
+        <TextView
+            android:id="@+id/txtHospital"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="Hospital"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/lblBloodGroupDisplayCardView"
+            app:layout_constraintStart_toEndOf="@+id/lblBloodGroupDisplayCardView"
+            app:layout_constraintTop_toTopOf="@+id/lblBloodGroupDisplayCardView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtLatitude"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:maxLength="5"
+            android:text="Latitude"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtHospital"
+            app:layout_constraintTop_toBottomOf="@+id/txtHospital"
+            app:layout_constraintVertical_bias="0.29" />
+
+        <TextView
+            android:id="@+id/txtLongitude"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:maxLength="5"
+            android:text="Longitude"
+            app:layout_constraintBottom_toBottomOf="@+id/txtLatitude"
+            app:layout_constraintEnd_toEndOf="@+id/txtHospital"
+            app:layout_constraintTop_toTopOf="@+id/txtLatitude" />
+
+        <TextView
+            android:id="@+id/lblBloodGroupDisplayCardView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/blood_display_shape"
+            android:fontFamily="@font/roboto"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.511"
+            tools:text="AB+" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCardView"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:paddingTop="0dp"
+            android:progressTint="#2196F3"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

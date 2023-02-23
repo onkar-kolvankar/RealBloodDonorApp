@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "97199024417",
+    "firebase_url": "https://blooddonorapp-c5dee.firebaseio.com",
+    "project_id": "blooddonorapp-c5dee",
+    "storage_bucket": "blooddonorapp-c5dee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97199024417:android:0079bf2b084545f46ff660",
+        "android_client_info": {
+          "package_name": "com.example.blooddonorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97199024417-2fmeri160qvdkssth7dt64ume7h0m5ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYFRD3X4wRW2t5IOOH0a8aMKA5iBLOxLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97199024417-2fmeri160qvdkssth7dt64ume7h0m5ja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

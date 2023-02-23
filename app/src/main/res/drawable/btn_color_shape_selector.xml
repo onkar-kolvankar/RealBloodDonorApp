@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+
+<!--            solid tag is used to give the color to the button when you have selector and shape together-->
+            <solid android:color="@color/colorPrimaryDark"/>
+<!--            Stroke tag is used to give outline to the view -->
+<!--            If you don't give the android:width then it takes 0 by default -->
+<!--            <stroke android:color="#000000" android:width="1dp" />-->
+            <corners android:radius="31dp" />
+
+        </shape>
+    </item>
+
+    <item android:state_enabled="false" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/grey"/>
+            <corners android:radius="31dp" />
+
+        </shape>
+    </item>
+
+    <item >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FF237C"
+                android:endColor="#FF4E4F"
+                android:type="linear"
+                android:angle="360"
+                />
+            <corners android:radius="31dp" />
+
+        </shape>
+    </item>
+</selector>
