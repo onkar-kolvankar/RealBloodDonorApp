@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/your_profile_item"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:title="Your Profile" />
+    <item
+        android:id="@+id/about_us_item"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="About Us" />
+    <item
+        android:id="@+id/help_item"
+        android:title="Help" />
+    <item
+        android:id="@+id/logout_item"
+        android:title="Log Out" />
+</menu>

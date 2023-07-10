@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityBloodRequest">
+
+    <Button
+        android:id="@+id/btn_submitRequest"
+        android:layout_width="248dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/btn_color_shape_selector"
+        android:elevation="100dp"
+        android:fontFamily="@font/roboto_bold"
+        android:letterSpacing=".3"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_location" />
+
+    <EditText
+        android:id="@+id/txt_location"
+        android:layout_width="356dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/edittext_locality"
+        android:elevation="7dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto_light"
+        android:hint="Enter Hospital/Blood Bank name"
+        android:inputType="textMultiLine|textPersonName"
+        android:maxLength="30"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sph_bloodGroupBloodRequestPage" />
+
+    <ImageView
+        android:id="@+id/imgNotificationBar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradient_file" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_submitRequest"
+        app:layout_constraintStart_toStartOf="@+id/btn_submitRequest"
+        app:layout_constraintTop_toTopOf="@+id/btn_submitRequest" />
+
+    <Spinner
+        android:id="@+id/sph_bloodGroupBloodRequestPage"
+        android:layout_width="355dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/spinner_blood_outline"
+        android:elevation="20dp"
+        android:entries="@array/blood_groups"
+        android:paddingStart="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar_for_optionsMenu"
+        android:background="@drawable/gradient_file"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        app:popupTheme="@style/OptionsPopUpTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNotificationBar"
+        app:menu="@menu/options_menu"
+        app:title="Blood Request"
+        app:titleTextColor="@color/white" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/A_bottom_navigation_container2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_nav"
+        android:background="@drawable/gradient_file"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

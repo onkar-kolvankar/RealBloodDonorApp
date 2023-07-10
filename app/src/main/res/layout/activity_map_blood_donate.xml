@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ActivityMapBloodDonate">
+
+    <ImageButton
+        android:id="@+id/btnCallContact"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/call_button_shape"
+        android:elevation="10dp"
+        android:src="@drawable/phone_button_green"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBloodGroupDisplayDonatePage"
+        app:layout_constraintStart_toEndOf="@+id/txtHospitalDonatePage"
+        app:layout_constraintTop_toTopOf="@+id/txtBloodGroupDisplayDonatePage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgNotificationBar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gradient_file" />
+
+    <TextView
+        android:id="@+id/txtHospitalDonatePage"
+        android:layout_width="187dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Please select the Request"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtBloodGroupDisplayDonatePage"
+        app:layout_constraintStart_toEndOf="@+id/txtBloodGroupDisplayDonatePage"
+        app:layout_constraintTop_toTopOf="@+id/txtBloodGroupDisplayDonatePage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtBloodGroupDisplayDonatePage"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/blood_display_shape"
+        android:fontFamily="@font/roboto"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/A_bottom_navigation_container1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map"
+        tools:text="AB+" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_toolbar_for_optionsMenu"
+        android:background="@drawable/gradient_file"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNotificationBar"
+        app:menu="@menu/options_menu"
+        app:popupTheme="@style/OptionsPopUpTheme" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/A_bottom_navigation_container1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bottom_nav"
+        android:background="@drawable/gradient_file"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="535dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+        tools:context=".ActivityMapsBloodDonateNEW" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

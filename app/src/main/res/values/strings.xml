@@ -1,0 +1,35 @@
+<resources>
+    <dimen name="fragment_height_for_mobile">600dp</dimen>
+    <dimen name="activity_height_forOn7Prime">708dp</dimen>
+    <dimen name="activity_width_forOn7Prime">412dp</dimen>
+    <dimen name="height_toolbar_for_optionsMenu">51dp</dimen>
+    <dimen name="height_bottom_nav">51dp</dimen>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_name">BloodDonorApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_maps_blood_donate_n_e_w">Map</string>
+    <string name="help3"><b>Eligibility for donating blood is as follows:</b>\n\n 1] Age should be between 18 and 60 years.\n2] You should not be suffering, or had history of   cancer.\n3] You should not be suffering from any blood clotting disorder, such as haemophilia.\n\n<b>Follow instructions mentioned below:</b>\n\n1] Your weight should be 45kg or above Minimum haemoglobin count should be 12.5gm.\n
+2] Pulse rate should be between 50 and 100 per minute, without any irregularities.\n
+3] Blood pressure should be, diastolic 50 to 100 mm Hg and Systolic 100 to 180 mm Hg.\n
+4] Body temperature should be normal and oral temperature should not exceed 37.5 degree Celsius.\n
+5] Should not have undergone any treatment for rabies or received Hepatitis B immune globulin within the past one year.\n
+6] Should not have donated blood within last three months.\n
+7] Should not have been treated for malaria within last three months.\n
+8] Should not have undergone any immunization within the past one month.\n
+9] Should not have undergone any dental work or taken aspirin within last the 72 hours.\n
+10] Should not have consumed alcohol within the last 9 hours.\n
+11] If you have any chronic disease that is not mentioned here, you may register, but please inform the patient or the doctor or the hospital staff before you donate blood.</string>
+
+    <string-array name="blood_groups">
+        <item>A +ve</item>
+        <item>A -ve</item>
+        <item>B +ve</item>
+        <item>B -ve</item>
+        <item>O +ve</item>
+        <item>O -ve</item>
+        <item>AB +ve</item>
+        <item>AB -ve</item>
+    </string-array>
+</resources>
