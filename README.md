@@ -49,12 +49,3 @@ The blood donor can choose the nearest blood request and decide if he wants to h
 ![image](https://github.com/onkar-kolvankar/RealBloodDonorApp/assets/44017121/965234b9-abff-47f4-b884-71ed276bd39a) ![image](https://github.com/onkar-kolvankar/RealBloodDonorApp/assets/44017121/e503bb35-0e84-47ab-bdb1-955364ae636c)
 
 8] You can Logout from the App.
-
-
-
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
- 
